@@ -1,13 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-let createParent = React.createElement("div", { id: "parent" }, [
-  React.createElement("h1", { id: "heading1" }, "H1 heading updated"),
-  React.createElement(
-    "div",
-    {},
-    React.createElement("h2", { id: "heading2" }, "H2 heading")
-  ),
-]);
 
+const timer = 3000;
+const fn  = ()=>{
+  console.log("fun called")
+}
+const Title = ()=> <h3>Title of app</h3>
+const headingElemnt = <h4>Heading h4</h4>
+const HeadingComponent = ()=>(
+  <div id="container">
+    <h1>Functional Component</h1>
+    <h2>Heading 2</h2>
+    {fn()}
+    {<h2>jsx expression</h2>}
+    {timer}
+    {headingElemnt}
+    <Title></Title>
+    <Title/>
+  </div>
+)
+// can inside {} in jsx can bind a js value , function calling or any js code and can write jsx 
 let root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(createParent);
+root.render(<HeadingComponent/>);

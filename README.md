@@ -35,3 +35,23 @@ in this class -
         it means it will on other version of browser , but it must work on last version of every browser ,you can also make list down to specific browser version like - last 2 chrome versions
 
 
+------------------ Class - 3------------
+
+in this class -
+
+    * Run Script to exicute or run a node package
+        * 'start':'parcel index.html',-----run in terminal - npm run start or npm start
+        * 'buildProd':'parcel build index.html'---run in terminal - npm run buildPord or npm buildProd
+
+    * JSX- jsx stand for javaScript Xml. it's like html or xml syntax , which helps to write to html elements in React 
+    jsx --> Babel transpiles in to --> React.creatElement --> React Element --> js object -->HTML (render)
+
+    * Tranpilation - Transpilers take the source code and convert it into another language. Transpilers are important for two reasons. First, not every browser supports every new syntax in ES6, and second, many developers use programming languages based off of JavaScript, such as CoffeeScript or TypeScript.
+
+    * Babel - Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into backwards-compatible JavaScript code that can be run by older JavaScript engines.
+
+    * React Component -
+                    i - Class Component
+                    ii- Functional Component
+
+
